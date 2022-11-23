@@ -5,7 +5,7 @@ namespace task
     {
         static void Main(string[] args)
         {
-            User user = new User("Shahnaz", "1212");
+            User user = new User("SHahnaz", "1212s");
         }
     }
 }

@@ -19,6 +19,7 @@ namespace task.models
                 if (value.Length >= 6 && value.Length <= 25)
                 {
                     _userName = value;
+                    Console.WriteLine("username is saved");
                 }
                 else
                 {
@@ -52,6 +53,7 @@ namespace task.models
                     if (result.Item1 != 0 && result.Item2 != 0 && result.Item3 != 0)
                     {
                         _password = value;
+                        Console.WriteLine("password is saved");
                     }
                     else
                     {
@@ -67,12 +69,12 @@ namespace task.models
 
         public User(string username)
         {
-            _userName = username;
+            UserName = username;
         }
         public User(string username, string password)
         {
-            _userName = username;
-            _password = password;
+            UserName = username;
+            Password = password;
         }
 
         public bool HasDigit(string text)
